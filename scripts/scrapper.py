@@ -193,13 +193,13 @@ async def scrape_channel():
         structured_jobs.append(parsed)
 
     df_clean = pd.DataFrame(structured_jobs)
-    df_clean.to_csv("structured_telegram_jobs.csv", index=False)
+    df_clean.to_csv("../data/structured_telegram_jobs.csv", index=False)
     print("✅ Structured data saved to structured_telegram_jobs.csv")
 
 
     # Save results to CSV
     df = pd.DataFrame(all_messages)
-    df.to_csv('telegram_jobs.csv', index=False)
+    df.to_csv('../data/telegram_jobs.csv', index=False)
     print(f"\n✅ Successfully scraped {len(all_messages)} messages to telegram_jobs.csv")
     
 
