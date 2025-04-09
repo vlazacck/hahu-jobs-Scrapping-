@@ -37,24 +37,38 @@ To extract and structure job opportunities posted in [@hahujobsforfreshgraduates
 ---
 
 ## 🏗️ Project Structure
-├── scripts/ │
-   └── scrapper.py # Main async script for scraping Telegram  
+├── scripts/ 
+
+   └── scrapper.py
+   # Main async script for scraping Telegram  
+   
    │ └── parser.py  for parsing  the texts  
+   
    │ └──.env # Contains Telegram API credentials 
+   
 ├── notebooks/ │ 
+
   └── dataprossessing .ipynb # Jupyter Notebook for proscessing the raw data 
+  
 ├── data/ │ 
-  │ └── telegram_jobs.csv # Raw scraped messages  
+
+  │ └── telegram_jobs.csv # Raw scraped messages
+  
   │ └──  structured_telegram_jobs.csv # structured output 
+  
   │ └── structured_telegram_cleaned.csv # Cleaned and structured output 
-├── requirements.txt └── README.md
+  
+├── requirements.txt
+
+└── README.md
+
 ├── database.sql
 
   ## 🚀 Getting Started
 
 ### 1. Clone the repo
 
-git clone https://github.com/yourusername/telegram-job-scraper.git
+git clone https://github.com/vlazacck/hahu-jobs-Scrapping-.git
 cd telegram-job-scraper
 
 2. Install dependencies
